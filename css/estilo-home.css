@@ -1,0 +1,225 @@
+/*Conteudo Geral */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+main {
+    color: #0000008c;
+    margin-bottom: 60px;
+  }
+
+.largura-container{
+    max-width: 1024px;
+    margin: 0 auto;
+
+}
+.header-secao{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+#sobre,
+#especialidades,
+#contato {
+  padding: 10px 20px 0;
+}
+/*Conteudo Geral */
+/*Header*/
+header{
+    width: 100%;
+    background-color: #00cad1;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+
+}
+#logo{
+    height: 60px;
+    margin-top: 5px;
+}
+.links-topo a{
+    color: white;
+    font-weight: bold;
+    font: size 16px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.links-topo a:hover{
+    color:  #065457;
+}
+/*Header*/
+
+/*Main*/
+
+
+/*RECEPÇAO*/
+#recepcao{
+    
+    height: 500px;
+    background-image: url(/Projeto-Clinica/assets/recepcao.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+}
+.recepcao-container{
+  
+    width: 100%;
+}
+.recepcao-container h1{
+    color: white;
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/*RECEPÇAO*/
+
+/*SOBRE*/
+
+#descricao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#descricao h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+/*SOBRE*/
+
+/*ESPECIALIDADES*/
+#especialidades-items{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+ 
+}
+#especialidades-items figure{
+    
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    width: calc(100% / 3 - 40px);
+    margin: 20px;
+    border-radius: 3px;
+}
+#especialidades-items figure img{
+   
+    width: 100%;
+    object-fit: cover;
+}
+#especialidades-items figure figcaption{
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+#especialidades-link{
+    text-align: center;
+    margin: 20px 0;
+}
+#especialidades-link a{
+
+    background-color: #00cace;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+/*Main*/
+
+/*Footer*/
+
+footer{
+    background-color: #0c6e71;
+    padding: 20px 0 ;
+ 
+}
+footer div img{
+    height: 60px;
+}
+.header-secao.footer{
+   
+    color: white;
+
+}
+.header-secao.footer p{
+    margin-bottom: 10px;
+}
+
+/*Footer*/
+
+/*Media até 435px*/
+
+@media (max-width : 435px){
+
+
+.header-container{
+display: flex;
+flex-direction: column;
+height: 100%;
+padding-bottom: 15px;
+}
+#box-logo{
+border-bottom: 2px solid #06545744;
+width: 100%;
+text-align: center;
+
+}
+
+.links-topo{
+padding-top: 15px;
+display: flex;
+width: 100%;
+justify-content: space-evenly;
+
+}
+
+#recepcao{
+height: 200px;
+}
+.recepcao-container h1{
+font-size: 28px;
+}
+#descricao img{
+display: none;
+}
+#especialidades-items figure{
+width: 100%;
+}
+}
+
+@media (min-width : 436px) and (max-width : 768px){
+
+#recepcao{
+    height: 300px;
+}
+#descricao img{
+    display: none;
+}
+#especialidades-items figure{
+    width: calc(100% / 2 - 40px);
+}
+
+}
+@media (min-width : 769px) and (max-width : 1024px){
+    #recepcao{
+        height: 400px;
+    }
+  
+}
