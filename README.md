@@ -1,4 +1,4 @@
-# Projeto-Clinica-HTML-CSS
+# Projeto Clinica Medica Life
 Site Clinica Medica Life usando HTML-CSS
 
 - Homepage
